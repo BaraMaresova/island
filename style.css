@@ -281,7 +281,7 @@ figure {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    max-width: 30%;
+    max-width: 100%;
     text-align: left;
   }
 
