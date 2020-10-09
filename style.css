@@ -246,13 +246,13 @@ img {
     margin-right: auto;
   }
 
-  .PCmenu{
+  .PCmenu {
     display: flex;
   }
 
-  ul.menu{
-    display:flex;
-    flex-wrap:wrap;
+  ul.menu {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
     max-width: 30%;
@@ -260,11 +260,28 @@ img {
     text-align: left;
   }
 
-.menu li {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
+  .menu li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
 
-  .uvod{
+  .uvod {
     flex: 1 1 70%;
+  }
+
+  .proc {
+    padding-left: 20px;
+    padding-right: 150px;
+  }
+
+  .mustsee {
+    padding-left: 150px;
+  }
+
+  .foto {
+    flex: 1 1 33.33%;
+  }
+
+  figure img {
+    width: 960px;
   }
 }
