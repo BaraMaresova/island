@@ -181,18 +181,17 @@ figure {
     white-space: nowrap;
   }
 
-  .menu li{
-border-top: 1px solid rgba(0, 0, 0, 0.2)
+  .menu li {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
   }
 
-  .menu li:nth-child(2){
-    border-right:1px solid rgba(0, 0, 0, 0.2);
+  .menu li:nth-child(2) {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
     border-left: 1px solid rgba(0, 0, 0, 0.2);
-    }
   }
 
-  .menu li:nth-child(3){
-    border-right:1px solid rgba(0, 0, 0, 0.2);
+  .menu li:nth-child(3) {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
   }
 
   .galerie {
