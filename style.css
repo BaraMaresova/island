@@ -69,13 +69,16 @@ body {
 ul.menu {
   display: flex;
   flex-direction: column;
-  margin: 30 auto;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
   padding: 0;
 }
 
 .menu li {
   list-style-type: none;
-  align-self: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .menu a {
@@ -85,6 +88,7 @@ ul.menu {
   color: black;
   opacity: 0.4;
   text-transform: uppercase;
+  justify-content: center;
 }
 
 /* OBSAH */
@@ -97,6 +101,7 @@ section h2 {
 section h2 {
   margin-top: 40px;
   position: relative;
+  padding: 20px;
 }
 
 section h2::after {
@@ -104,14 +109,14 @@ section h2::after {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  margin: -20px;
+  margin-left: -20px;
   width: 100px;
   height: 4px;
   background-color: rgb(74, 154, 219);
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .popisek {
@@ -126,17 +131,25 @@ img {
   color: black;
 }
 
+figure {
+  margin: 0;
+}
+
 /* FOTOGALERIE */
 .gallery {
   max-width: 100%;
 }
 
 .foto img {
-  min-width: 100%;
+  width: 100%;
 }
 
 .galerie .popisek::first-line {
   font-weight: 700;
+}
+
+.galerie .popisek {
+  margin-bottom: 20px;
 }
 
 /* PATICKA */
@@ -160,16 +173,26 @@ img {
   ul.menu {
     flex-direction: row;
     justify-content: space-around;
-    min-width: 100%;
+    max-width: 100%;
   }
 
   .menu a {
     flex: 1 1 25%;
+    white-space: nowrap;
   }
 
-  .gallery {
-    min-width: 500px;
-    max-width: 1000px;
+  .menu li{
+border-top: 1px solid rgba(0, 0, 0, 0.2)
+  }
+
+  .menu li:nth-child(2){
+    border-right:1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .menu li:nth-child(3){
+    border-right:1px solid rgba(0, 0, 0, 0.2);
   }
 
   .galerie {
@@ -187,8 +210,8 @@ img {
 
   figure .popisek {
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    right: 20px;
+    bottom: 20px;
     color: white;
     opacity: 0.7;
   }
@@ -198,8 +221,8 @@ img {
   }
 
   .foto {
+    flex: 0 1 50%;
     position: relative;
-    width: 500px;
     overflow: hidden;
   }
 
@@ -225,6 +248,7 @@ img {
     transform: translateY(100%);
     transition: transform 0.4s;
     padding: 10px;
+    margin-bottom: 0;
   }
 
   .foto .popisek a {
@@ -233,6 +257,10 @@ img {
 
   .foto:hover .popisek {
     transform: translateY(0);
+  }
+
+  .paticka {
+    margin-top: 0;
   }
 }
 /* pc */
@@ -254,9 +282,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start;
     max-width: 30%;
-    margin-left: 20px;
     text-align: left;
   }
 
@@ -264,16 +290,30 @@ img {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
 
+  .menu a {
+    justify-content: left;
+  }
+
   .uvod {
     flex: 1 1 70%;
   }
 
-  .proc {
+  .nav {
+    flex: 1 1 20%;
+  }
+
+  .proc p,
+  .proc h2 {
     padding-left: 20px;
     padding-right: 150px;
   }
 
-  .mustsee {
+  p.popisek {
+    padding: 0;
+  }
+
+  .mustsee p,
+  .mustsee h2 {
     padding-left: 150px;
   }
 
@@ -281,7 +321,10 @@ img {
     flex: 1 1 33.33%;
   }
 
-  figure img {
-    width: 960px;
+  .paticka {
+    margin-top: 0;
+    background-image: none;
+    background-color: #f5f5f5;
+    margin: 15px;
   }
 }
