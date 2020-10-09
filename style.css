@@ -239,6 +239,32 @@ img {
 @media (min-width: 1000px) {
   .obsah {
     width: 960px;
-    margin-top: -40px;
+    margin-top: -20px;
+    border: 1px solid white;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .PCmenu{
+    display: flex;
+  }
+
+  ul.menu{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 30%;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+.menu li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+  .uvod{
+    flex: 1 1 70%;
   }
 }
